@@ -76,7 +76,7 @@ jobs:
     name: Build Firmware
     needs: check_updates
     if: needs.check_updates.outputs.build_required == 'true'
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 360
     permissions:
       contents: write
